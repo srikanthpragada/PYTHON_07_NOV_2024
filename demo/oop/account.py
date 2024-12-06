@@ -1,4 +1,10 @@
 class SavingsAccount:
+    minbal = 10000
+
+    @staticmethod
+    def getminbal():
+        return SavingsAccount.minbal
+
     def __init__(self, acno, ahname, balance=0):
         self.acno = acno
         self.ahname = ahname
@@ -23,4 +29,4 @@ a2 = SavingsAccount(2, "Jack")
 
 a1.deposit(10000)
 print(a1.getBalance())
-print(a1.currentbalance)  # property 
+print(a1.currentbalance)  # property
