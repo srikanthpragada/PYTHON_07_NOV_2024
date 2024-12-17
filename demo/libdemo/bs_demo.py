@@ -21,4 +21,4 @@ print(bs.a['href'])
 
 links = bs.find_all('a')
 for link in links:
-    print(link['href'])
+    print(link['href'], link['class'][0])
